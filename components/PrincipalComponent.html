@@ -1,0 +1,1702 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>projeto-lunacao-front documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">projeto-lunacao-front documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>PrincipalComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/principal/principal.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-principal</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./principal.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./principal.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#authService">authService</a>
+                            </li>
+                            <li>
+                                <a href="#categoria">categoria</a>
+                            </li>
+                            <li>
+                                <a href="#idCategoria">idCategoria</a>
+                            </li>
+                            <li>
+                                <a href="#idUsuario">idUsuario</a>
+                            </li>
+                            <li>
+                                <a href="#listaCategorias">listaCategorias</a>
+                            </li>
+                            <li>
+                                <a href="#listaProdutos">listaProdutos</a>
+                            </li>
+                            <li>
+                                <a href="#produto">produto</a>
+                            </li>
+                            <li>
+                                <a href="#usuario">usuario</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#findByIdCategoria">findByIdCategoria</a>
+                            </li>
+                            <li>
+                                <a href="#findByIdUsuario">findByIdUsuario</a>
+                            </li>
+                            <li>
+                                <a href="#getAllCategorias">getAllCategorias</a>
+                            </li>
+                            <li>
+                                <a href="#getAllProdutos">getAllProdutos</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#publicar">publicar</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, produtoService: <a href="../injectables/ProdutoService.html">ProdutoService</a>, catogoriaService: <a href="../injectables/CategoriaService.html">CategoriaService</a>, authService: <a href="../injectables/AuthService.html">AuthService</a>, alertas: <a href="../injectables/AlertasService.html">AlertasService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/principal/principal.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>produtoService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProdutoService.html" target="_self" >ProdutoService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>catogoriaService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CategoriaService.html" target="_self" >CategoriaService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alertas</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlertasService.html" target="_self" >AlertasService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findByIdCategoria"></a>
+                    <span class="name">
+                        <b>
+                            findByIdCategoria
+                        </b>
+                        <a href="#findByIdCategoria"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findByIdCategoria()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/principal/principal.component.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findByIdUsuario"></a>
+                    <span class="name">
+                        <b>
+                            findByIdUsuario
+                        </b>
+                        <a href="#findByIdUsuario"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findByIdUsuario()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/app/principal/principal.component.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllCategorias"></a>
+                    <span class="name">
+                        <b>
+                            getAllCategorias
+                        </b>
+                        <a href="#getAllCategorias"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllCategorias()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/app/principal/principal.component.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllProdutos"></a>
+                    <span class="name">
+                        <b>
+                            getAllProdutos
+                        </b>
+                        <a href="#getAllProdutos"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllProdutos()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/principal/principal.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">src/app/principal/principal.component.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="publicar"></a>
+                    <span class="name">
+                        <b>
+                            publicar
+                        </b>
+                        <a href="#publicar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>publicar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/principal/principal.component.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="authService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            authService</b>
+                            <a href="#authService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/principal/principal.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="categoria"></a>
+                        <span class="name">
+                            <b>
+                            categoria</b>
+                            <a href="#categoria"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Categoria.html" target="_self" >Categoria</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Categoria</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/principal/principal.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="idCategoria"></a>
+                        <span class="name">
+                            <b>
+                            idCategoria</b>
+                            <a href="#idCategoria"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/principal/principal.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="idUsuario"></a>
+                        <span class="name">
+                            <b>
+                            idUsuario</b>
+                            <a href="#idUsuario"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>environment.id</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/principal/principal.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listaCategorias"></a>
+                        <span class="name">
+                            <b>
+                            listaCategorias</b>
+                            <a href="#listaCategorias"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Categoria.html" target="_self" >Categoria[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/principal/principal.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listaProdutos"></a>
+                        <span class="name">
+                            <b>
+                            listaProdutos</b>
+                            <a href="#listaProdutos"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Produto.html" target="_self" >Produto[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/principal/principal.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="produto"></a>
+                        <span class="name">
+                            <b>
+                            produto</b>
+                            <a href="#produto"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Produto.html" target="_self" >Produto</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Produto()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/principal/principal.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="usuario"></a>
+                        <span class="name">
+                            <b>
+                            usuario</b>
+                            <a href="#usuario"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Usuario.html" target="_self" >Usuario</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Usuario()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/principal/principal.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { environment } from &#x27;src/environments/environment.prod&#x27;;
+import { Categoria } from &#x27;../model/Categoria&#x27;;
+import { Produto } from &#x27;../model/Produto&#x27;;
+import { Usuario } from &#x27;../model/Usuario&#x27;;
+import { AlertasService } from &#x27;../service/alertas.service&#x27;;
+import { AuthService } from &#x27;../service/auth.service&#x27;;
+import { CategoriaService } from &#x27;../service/categoria.service&#x27;;
+import { ProdutoService } from &#x27;../service/produto.service&#x27;;
+
+@Component({
+  selector: &#x27;app-principal&#x27;,
+  templateUrl: &#x27;./principal.component.html&#x27;,
+  styleUrls: [&#x27;./principal.component.css&#x27;]
+})
+export class PrincipalComponent implements OnInit {
+
+  categoria: Categoria &#x3D; new Categoria
+  listaProdutos: Produto[]
+
+  
+
+  produto: Produto &#x3D; new Produto()
+  listaCategorias: Categoria[]
+  idCategoria: number
+
+  
+  usuario: Usuario &#x3D; new Usuario()
+  idUsuario &#x3D; environment.id
+
+  constructor(
+    private router: Router,
+    private produtoService: ProdutoService,
+    private catogoriaService: CategoriaService,
+    public authService: AuthService,
+    private alertas: AlertasService
+
+  ) { }
+
+  ngOnInit(){
+
+    if(environment.token &#x3D;&#x3D; &#x27;&#x27;){
+      this.router.navigate([&#x27;/principal&#x27;])
+    }
+
+    this.getAllCategorias()
+    this.getAllProdutos()
+    /* this.getByIdUsuario() */
+    
+  }
+
+  
+  getAllCategorias(){
+    this.catogoriaService.getAllCategoria().subscribe((resp: Categoria[])&#x3D;&gt;{
+      this.listaCategorias &#x3D; resp
+    })
+  }
+
+  findByIdCategoria(){
+    this.catogoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria)&#x3D;&gt;{
+      this.categoria &#x3D; resp
+    })
+
+  }
+
+    getAllProdutos() {
+      this.produtoService.getAllProdutos().subscribe((resp: Produto[]) &#x3D;&gt; {
+        this.listaProdutos &#x3D; resp
+        
+      })
+    }
+
+    findByIdUsuario() {
+      this.authService.getByIdUsuario(this.idUsuario).subscribe((resp: Usuario) &#x3D;&gt; {
+        this.usuario &#x3D; resp
+      })
+    }
+
+    
+  publicar(){
+    this.categoria.id &#x3D; this.idCategoria
+    this.produto.categoria &#x3D; this.categoria
+
+    this.usuario.id &#x3D; this.idUsuario
+    this.produto.usuario &#x3D; this.usuario 
+    console.log(this.produto)
+    this.produtoService.postProduto(this.produto).subscribe((resp: Produto)&#x3D;&gt;{
+      this.produto &#x3D; resp
+      this.alertas.showAlertSuccess(&#x27;Produto cadastrado com sucesso!&#x27;)
+      this.produto &#x3D; new Produto
+      this.getAllProdutos()
+    })
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!--   NOME LOGO   --&gt;
+&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;div class&#x3D;&quot;row d-flex justify-content-center mt-5 mb-5&quot;&gt;
+    &lt;h1 class&#x3D;&quot;nomeProjeto&quot;&gt;&lt;span data-shadow-text&#x3D;&quot;Lunação&quot;&gt;Lunação&lt;/span&gt;&lt;br&gt;um projeto contra a pobreza menstrual
+    &lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--   NOME LOGO   --&gt;
+
+&lt;hr&gt;
+
+&lt;!--   CARROUSSEL   --&gt;
+&lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+  &lt;div id&#x3D;&quot;carouselExampleIndicators&quot; class&#x3D;&quot;carousel slide&quot; data-ride&#x3D;&quot;carousel&quot;&gt;
+    &lt;ol class&#x3D;&quot;carousel-indicators&quot;&gt;
+      &lt;li data-target&#x3D;&quot;#carouselExampleIndicators&quot; data-slide-to&#x3D;&quot;0&quot; class&#x3D;&quot;active&quot;&gt;&lt;/li&gt;
+      &lt;li data-target&#x3D;&quot;#carouselExampleIndicators&quot; data-slide-to&#x3D;&quot;1&quot;&gt;&lt;/li&gt;
+      &lt;li data-target&#x3D;&quot;#carouselExampleIndicators&quot; data-slide-to&#x3D;&quot;2&quot;&gt;&lt;/li&gt;
+      &lt;li data-target&#x3D;&quot;#carouselExampleIndicators&quot; data-slide-to&#x3D;&quot;3&quot;&gt;&lt;/li&gt;
+      &lt;li data-target&#x3D;&quot;#carouselExampleIndicators&quot; data-slide-to&#x3D;&quot;4&quot;&gt;&lt;/li&gt;
+      &lt;li data-target&#x3D;&quot;#carouselExampleIndicators&quot; data-slide-to&#x3D;&quot;5&quot;&gt;&lt;/li&gt;
+      &lt;li data-target&#x3D;&quot;#carouselExampleIndicators&quot; data-slide-to&#x3D;&quot;6&quot;&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;div class&#x3D;&quot;carousel-inner&quot;&gt;
+      &lt;div class&#x3D;&quot;carousel-item active&quot;&gt;
+        &lt;img class&#x3D;&quot;d-block w-100 carousel-inner&quot; src&#x3D;&quot;https://i.imgur.com/OxawFz0.png&quot; alt&#x3D;&quot;Primeiro Slide&quot;&gt;
+        &lt;div class&#x3D;&quot;carousel-caption d-none d-md-block&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;carousel-item&quot;&gt;
+        &lt;img class&#x3D;&quot;d-block w-100&quot; src&#x3D;&quot;https://i.imgur.com/e22D9BW.png&quot; alt&#x3D;&quot;Segundo Slide&quot;&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;carousel-item&quot;&gt;
+        &lt;img class&#x3D;&quot;d-block w-100&quot; src&#x3D;&quot;https://i.imgur.com/bnIDctD.png&quot; alt&#x3D;&quot;Terceiro Slide&quot;&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;carousel-item&quot;&gt;
+        &lt;img class&#x3D;&quot;d-block w-100&quot; src&#x3D;&quot;https://i.imgur.com/w16mxlc.png&quot; alt&#x3D;&quot;Quarto Slide&quot;&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;carousel-item&quot;&gt;
+        &lt;img class&#x3D;&quot;d-block w-100&quot; src&#x3D;&quot;https://i.imgur.com/C5cSdMP.png&quot; alt&#x3D;&quot;Quinto Slide&quot;&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;carousel-item&quot;&gt;
+        &lt;img class&#x3D;&quot;d-block w-100&quot; src&#x3D;&quot;https://i.imgur.com/8dfPRtx.png&quot; alt&#x3D;&quot;Sexto Slide&quot;&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;carousel-item&quot;&gt;
+        &lt;img class&#x3D;&quot;d-block w-100&quot; src&#x3D;&quot;https://i.imgur.com/623tV53.png&quot; alt&#x3D;&quot;Sétimo Slide&quot;&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;a class&#x3D;&quot;carousel-control-prev&quot; href&#x3D;&quot;#carouselExampleIndicators&quot; role&#x3D;&quot;button&quot; data-slide&#x3D;&quot;prev&quot;&gt;
+      &lt;span class&#x3D;&quot;carousel-control-prev-icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span class&#x3D;&quot;sr-only&quot;&gt;Anterior&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class&#x3D;&quot;carousel-control-next&quot; href&#x3D;&quot;#carouselExampleIndicators&quot; role&#x3D;&quot;button&quot; data-slide&#x3D;&quot;next&quot;&gt;
+      &lt;span class&#x3D;&quot;carousel-control-next-icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;span class&#x3D;&quot;sr-only&quot;&gt;Próximo&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--   CARROUSSEL   --&gt;
+
+&lt;!--   JUMBOTRON PRODUTOS   --&gt;
+&lt;div class&#x3D;&quot;jumbotron jumbotron-fluid bg-faded mt-5 p-4&quot; style&#x3D;&quot;background-color: #FEF7D7;&quot;&gt;
+  &lt;div class&#x3D;&quot;container d-flex justify-content-center&quot;&gt;
+    &lt;h1 class&#x3D;&quot;display-4 estilo&quot; id&#x3D;&quot;produtos&quot;&gt;Produtos&lt;/h1&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;row d-flex justify-content-center mt-4&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-12 d-flex justify-content-center&quot;&gt;
+      &lt;button *ngIf&#x3D;&#x27;authService.adm() || authService.doador()&#x27; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#novaPostagem&quot; class&#x3D;&quot; btn text-light&quot; style&#x3D;&quot;background-color: rgba(112, 85, 69, 0.753);&quot;&gt;Cadastrar um Produto&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!--   JUMBOTRON PRODUTOS   --&gt;
+
+&lt;!--   BOTÃO DE NOVAS POSATGENS   --&gt;
+
+&lt;!-- &lt;div class&#x3D;&quot;row d-flex justify-content-center mb-4&quot;&gt;
+  &lt;div class&#x3D;&quot;col-md-12 d-flex justify-content-center&quot;&gt;
+    &lt;button *ngIf&#x3D;&#x27;authService.adm() || authService.doador()&#x27; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#novaPostagem&quot; class&#x3D;&quot;btn btn-info&quot;&gt;Cadastrar um Produto&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt; --&gt;
+
+&lt;!--   BOTÃO DE NOVAS POSATGENS   --&gt;
+
+&lt;!--   CARD SLIDER   --&gt;
+ &lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+&lt;div id&#x3D;&quot;multi-item-example&quot; class&#x3D;&quot;carousel slide carousel-multi-item&quot; data-ride&#x3D;&quot;carousel&quot;&gt;
+
+  &lt;!--   INDICATORES   --&gt;
+  &lt;ol class&#x3D;&quot;carousel-indicators&quot;&gt;
+    &lt;li class&#x3D;&quot;btn-floating&quot; data-target&#x3D;&quot;#multi-item-example&quot; data-slide-to&#x3D;&quot;0&quot; class&#x3D;&quot;active&quot;&gt;&lt;/li&gt;
+    &lt;li class&#x3D;&quot;btn-floating&quot; data-target&#x3D;&quot;#multi-item-example&quot; data-slide-to&#x3D;&quot;1&quot;&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;!--   INDICATORES   --&gt;
+
+  &lt;!--   SLIDES   --&gt;
+
+    &lt;div class&#x3D;&quot;carousel-inner&quot; role&#x3D;&quot;listbox&quot;&gt;
+
+
+        &lt;div  class&#x3D;&quot;carousel-item active&quot;&gt;
+
+          &lt;div *ngFor&#x3D;&#x27;let item of listaProdutos&#x27; class&#x3D;&quot;col-md-3&quot; style&#x3D;&quot;float:left&quot;&gt;
+           &lt;div class&#x3D;&quot;card mb-2&quot;&gt;
+              &lt;img class&#x3D;&quot;card-img-top&quot; src&#x3D;&quot;{{item.imagem}}&quot; alt&#x3D;&quot;Card image cap&quot;&gt;
+              &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                &lt;h4 class&#x3D;&quot;card-title&quot;&gt;{{item.nome}}&lt;/h4&gt;
+                &lt;p class&#x3D;&quot;card-text&quot;&gt;{{item.descricao}}&lt;/p&gt;
+                &lt;button class&#x3D;&quot;btn btn-outline-success mr-3 mb-2&quot;&gt;Mais Informações&lt;/button&gt;
+                &lt;button *ngIf&#x3D;&#x27;authService.adm() || authService.doador()&#x27; [routerLink]&#x3D;&quot;[&#x27;/produto-edit&#x27;, item.id]&quot; class&#x3D;&quot;btn btn-outline-info mr-2&quot;&gt;Editar&lt;/button&gt;
+                &lt;button *ngIf&#x3D;&#x27;authService.adm() || authService.doador()&#x27; [routerLink]&#x3D;&quot;[&#x27;/produto-delete&#x27;, item.id]&quot; class&#x3D;&quot;btn btn-outline-danger mr-3&quot;&gt;Apagar&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+       &lt;/div&gt;
+      &lt;!--&lt;nav&gt;
+        &lt;div class&#x3D;&quot;nav nav-tabs d-flex justify-content-center&quot; id&#x3D;&quot;nav-tab&quot; role&#x3D;&quot;tablist&quot;&gt;
+
+          &lt;a class&#x3D;&quot;nav-item nav-link active&quot; id&#x3D;&quot;nav-todosProdutos-tab&quot; data-toggle&#x3D;&quot;tab&quot; href&#x3D;&quot;#nav-todosProdutos&quot;
+            role&#x3D;&quot;tab&quot; aria-controls&#x3D;&quot;nav-todosProdutos&quot; aria-selected&#x3D;&quot;true&quot;&gt;Todos os Produtos&lt;/a&gt;
+
+          &lt;a (click)&#x3D;&#x27;findByIdUsuario()&#x27; class&#x3D;&quot;nav-item nav-link&quot; id&#x3D;&quot;nav-meusProdutos-tab&quot; data-toggle&#x3D;&quot;tab&quot;
+            href&#x3D;&quot;#nav-meusProdutos&quot; role&#x3D;&quot;tab&quot; aria-controls&#x3D;&quot;nav-meusProdutos&quot; aria-selected&#x3D;&quot;false&quot;&gt;Meus Produtos&lt;/a&gt;
+
+          &lt;a class&#x3D;&quot;nav-item nav-link&quot; id&#x3D;&quot;nav-produtosCategoria-tab&quot; data-toggle&#x3D;&quot;tab&quot; href&#x3D;&quot;#nav-produtosCategoria&quot;
+            role&#x3D;&quot;tab&quot; aria-controls&#x3D;&quot;nav-produtosCategoria&quot; aria-selected&#x3D;&quot;false&quot;&gt;Produtos por Categoria&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+      &lt;div class&#x3D;&quot;tab-content mt-5&quot; id&#x3D;&quot;nav-tabContent&quot;&gt;
+
+        &lt;div class&#x3D;&quot;tab-pane fade show active&quot; id&#x3D;&quot;nav-todosProdutos&quot; role&#x3D;&quot;tabpanel&quot;
+          aria-labelledby&#x3D;&quot;nav-todosProdutos-tab&quot;&gt;
+
+          &lt;div class&#x3D;&quot;card-columns&quot;&gt;
+            &lt;div class&#x3D;&quot;card text-center&quot; *ngFor&#x3D;&#x27;let item of listaProdutos&#x27;&gt;
+              &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                &lt;img class&#x3D;&quot;card-img-top&quot; src&#x3D;&quot;{{item.imagem}}&quot; alt&#x3D;&quot;Card image cap&quot;&gt;
+                &lt;h5 class&#x3D;&quot;card-title&quot;&gt;{{item.nome}}&lt;/h5&gt;
+                &lt;small class&#x3D;&quot;text-muted&quot;&gt;Categoria: {{item.categoria.descricao}} &lt;/small&gt;
+                &lt;p class&#x3D;&quot;card-text&quot;&gt;{{item.descricao}}&lt;/p&gt;
+                &lt;p class&#x3D;&quot;card-text&quot;&gt;&lt;small class&#x3D;&quot;text-muted&quot;&gt;Doado por:{{item.usuario.nome}}&lt;/small&gt;&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;tab-pane fade&quot; id&#x3D;&quot;nav-meusProdutos&quot; role&#x3D;&quot;tabpanel&quot; aria-labelledby&#x3D;&quot;nav-meusProdutos-tab&quot;&gt;
+
+
+          &lt;div class&#x3D;&quot;card-columns&quot;&gt;
+            &lt;div class&#x3D;&quot;card text-center&quot; *ngFor&#x3D;&#x27;let item of usuario.produto&#x27;&gt;
+              &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                &lt;img class&#x3D;&quot;card-img-top&quot; src&#x3D;&quot;{{item.imagem}}&quot; alt&#x3D;&quot;Card image cap&quot;&gt;
+                &lt;h5 class&#x3D;&quot;card-title&quot;&gt;{{item.nome}}&lt;/h5&gt;
+                &lt;small class&#x3D;&quot;text-muted&quot;&gt;Categoria: {{item.categoria.descricao}} &lt;/small&gt;
+                &lt;p class&#x3D;&quot;card-text&quot;&gt;{{item.descricao}}&lt;/p&gt;
+                &lt;!-- &lt;p class&#x3D;&quot;card-text&quot;&gt;&lt;small class&#x3D;&quot;text-muted&quot;&gt;{{}}&lt;/small&gt;&lt;/p&gt; --&gt;
+
+                &lt;!-- &lt;a [routerLink]&#x3D;&quot;[&#x27;/produto-edit&#x27;, item.id]&quot; class&#x3D;&quot;text-info mr-3&quot; href&#x3D;&quot;&quot;&gt;Editar&lt;/a&gt;
+                &lt;a [routerLink]&#x3D;&quot;[&#x27;/produto-delete&#x27;, item.id]&quot; class&#x3D;&quot;text-danger&quot; href&#x3D;&quot;&quot;&gt;Apagar&lt;/a&gt;
+
+                 &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;tab-pane fade&quot; id&#x3D;&quot;nav-produtosCategoria&quot; role&#x3D;&quot;tabpanel&quot;
+          aria-labelledby&#x3D;&quot;nav-produtosCategoria-tab&quot;&gt;
+
+          &lt;div class&#x3D;&quot;card-columns&quot; *ngFor&#x3D;&#x27;let categoria of listaCategorias&#x27;&gt;
+            &lt;div class&#x3D;&quot;card text-center&quot; *ngFor&#x3D;&#x27;let item of categoria.produto&#x27;&gt;
+              &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                &lt;img class&#x3D;&quot;card-img-top&quot; src&#x3D;&quot;{{item.imagem}}&quot; alt&#x3D;&quot;Card image cap&quot;&gt;
+                &lt;h5 class&#x3D;&quot;card-title&quot;&gt;{{item.nome}}&lt;/h5&gt;
+                &lt;p class&#x3D;&quot;card-text&quot;&gt;{{item.descricao}}&lt;/p&gt;
+                &lt;!-- &lt;p class&#x3D;&quot;card-text&quot;&gt;&lt;small class&#x3D;&quot;text-muted&quot;&gt;{{}}&lt;/small&gt;&lt;/p&gt; --&gt;
+              &lt;!-- &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt; --&gt;
+      &lt;/div&gt;
+
+
+      &lt;!-- First slide
+     &lt;div class&#x3D;&quot;carousel-item active&quot;&gt;
+
+      &lt;div class&#x3D;&quot;col-md-3&quot; style&#x3D;&quot;float:left&quot;&gt;
+       &lt;div *ngFor&#x3D;&#x27;let item of usuario.produto&#x27; class&#x3D;&quot;card mb-2&quot;&gt;
+          &lt;img class&#x3D;&quot;card-img-top&quot; src&#x3D;&quot;https://i.imgur.com/auzVsWN.jpg&quot; alt&#x3D;&quot;Card image cap&quot;&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;h4 class&#x3D;&quot;card-title&quot;&gt;{{item.nome}}&lt;/h4&gt;
+            &lt;p class&#x3D;&quot;card-text&quot;&gt;{{item.categoria.descricao}&lt;/p&gt;
+            &lt;a class&#x3D;&quot;btn btn-primary&quot;&gt;Button&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+
+
+
+
+
+       &lt;!-- First slide --&gt;
+      &lt;!-- &lt;div class&#x3D;&quot;col-md-3&quot; style&#x3D;&quot;float:left&quot;&gt;
+        &lt;div class&#x3D;&quot;card mb-2&quot;&gt;
+          &lt;img class&#x3D;&quot;card-img-top&quot; width&#x3D;&quot;209&quot; height&#x3D;&quot;209&quot; src&#x3D;&quot;https://imgur.com/zBSufTt&quot; alt&#x3D;&quot;Card image cap&quot;&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;h4 class&#x3D;&quot;card-title&quot;&gt;Coletor Menstrual&lt;/h4&gt;
+            &lt;p class&#x3D;&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the
+              card&#x27;s content.&lt;/p&gt;
+            &lt;a class&#x3D;&quot;btn btn-primary&quot;&gt;Button&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+
+      &lt;div class&#x3D;&quot;col-md-3&quot; style&#x3D;&quot;float:left&quot;&gt;
+        &lt;div class&#x3D;&quot;card mb-2&quot;&gt;
+          &lt;img class&#x3D;&quot;card-img-top&quot; width&#x3D;&quot;183&quot; height&#x3D;&quot;183&quot; src&#x3D;&quot;https://i.imgur.com/hrJoDd2.jpg&quot;
+            alt&#x3D;&quot;Card image cap&quot;&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;h4 class&#x3D;&quot;card-title&quot;&gt;Absorvente reutilizável&lt;/h4&gt;
+            &lt;p class&#x3D;&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the
+              card&#x27;s content.&lt;/p&gt;
+            &lt;a class&#x3D;&quot;btn btn-primary&quot;&gt;Button&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt; --&gt;
+
+    &lt;/div&gt;
+    &lt;!--/.First slide--&gt;
+
+    &lt;!--Second slide--&gt;
+    &lt;!-- &lt;div class&#x3D;&quot;carousel-item&quot;&gt;
+
+      &lt;div class&#x3D;&quot;col-md-3&quot; style&#x3D;&quot;float:left&quot;&gt;
+        &lt;div class&#x3D;&quot;card mb-2&quot;&gt;
+          &lt;img class&#x3D;&quot;card-img-top&quot; src&#x3D;&quot;https://i.imgur.com/5ks10EP.jpg&quot;
+            alt&#x3D;&quot;Card image cap&quot;&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;h4 class&#x3D;&quot;card-title&quot;&gt;Absorvente interno&lt;/h4&gt;
+            &lt;p class&#x3D;&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the
+              card&#x27;s content.&lt;/p&gt;
+            &lt;a class&#x3D;&quot;btn btn-primary&quot;&gt;Button&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-3&quot; style&#x3D;&quot;float:left&quot;&gt;
+        &lt;div class&#x3D;&quot;card mb-2&quot;&gt;
+          &lt;img class&#x3D;&quot;card-img-top&quot; width&#x3D;&quot;190&quot; height&#x3D;&quot;190&quot; src&#x3D;&quot;https://i.imgur.com/MpHTXuQ.jpg&quot;
+            alt&#x3D;&quot;Card image cap&quot;&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;h4 class&#x3D;&quot;card-title&quot;&gt;Absorvente&lt;/h4&gt;
+            &lt;p class&#x3D;&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the
+              card&#x27;s content.&lt;/p&gt;
+            &lt;a class&#x3D;&quot;btn btn-primary&quot;&gt;Button&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; --&gt;
+    &lt;!--/.Second slide--&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--Controls--&gt;
+&lt;div class&#x3D;&quot;controls-top ml-3 d-flex justify-content-center&quot;&gt;
+  &lt;a class&#x3D;&quot;btn-floating mr-1&quot; href&#x3D;&quot;#multi-item-example&quot; data-slide&#x3D;&quot;prev&quot;&gt;&lt;i id&#x3D;&quot;controle&quot; class&#x3D;&quot;fa fa-circle-thin&quot;
+      aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;a class&#x3D;&quot;btn-floating&quot; href&#x3D;&quot;#multi-item-example&quot; data-slide&#x3D;&quot;next&quot;&gt;&lt;i id&#x3D;&quot;controle&quot; class&#x3D;&quot;fa fa-circle-thin&quot;
+      aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;!--/.Controls--&gt;
+&lt;!--/Card Slider--&gt;
+
+&lt;!--Jumbotron colaboradores--&gt;
+&lt;div class&#x3D;&quot;jumbotron jumbotron-fluid bg-faded mt-5 p-5&quot; style&#x3D;&quot;background-color: #FEF7D7;&quot;&gt;
+  &lt;div class&#x3D;&quot;container d-flex justify-content-center&quot;&gt;
+    &lt;h1 class&#x3D;&quot;display-4 estilo&quot; id&#x3D;&quot;grupo&quot;&gt;Equipe&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--/Jumbotron colaboradores--&gt;
+
+&lt;!--Colaboradores--&gt;
+
+&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+      &lt;div class&#x3D;&quot;row d-flex justify-content-center&quot;&gt;
+
+        &lt;!-- Primeira pessoa --&gt;
+        &lt;div class&#x3D;&quot;person&quot;&gt;
+          &lt;div class&#x3D;&quot;container-sobre&quot;&gt;
+            &lt;div class&#x3D;&quot;container-sobre-inner&quot;&gt;
+              &lt;img class&#x3D;&quot;img img1&quot; src&#x3D;&quot;&quot; /&gt;
+              &lt;img class&#x3D;&quot;circle&quot; src&#x3D;&quot;https://i.imgur.com/0Uwrucm.png&quot; /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;ul class&#x3D;&quot;s-network&quot;&gt;
+            &lt;li&gt;
+                &lt;a href&#x3D;&quot;https://www.linkedin.com/in/agni-dmitri/&quot; target&#x3D;&quot;_blank&quot; class&#x3D;&quot;icoLinkedinn&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-linkedin-square&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href&#x3D;&quot;https://github.com/agnidmitri&quot; target&#x3D;&quot;_blank&quot; class&#x3D;&quot;icoGithub&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-github-square&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+          &lt;div class&#x3D;&quot;divider&quot;&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&quot;name&quot;&gt;Agni&lt;/div&gt;
+          &lt;div class&#x3D;&quot;title&quot;&gt;
+            &lt;p class&#x3D;&quot;mr-3 text-justify&quot;&gt;Sou uma pessoa trans não binária, tenho vinte e um anos e sou desenvolvedore full stack
+              junior. Meu objetivo profissional é trabalhar como dev front-end e aprimorar minhas habilidades com UI/UX
+              para tornar a tecnologia cada vez mais acessível a todos os públicos. Minha missão na tecnologia é ser representatividade para pessoas trans e não brancas.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- /Primeira pessoa --&gt;
+
+        &lt;!-- Segunda pessoa --&gt;
+        &lt;div class&#x3D;&quot;person&quot;&gt;
+          &lt;div class&#x3D;&quot;container-sobre&quot;&gt;
+            &lt;div class&#x3D;&quot;container-sobre-inner&quot;&gt;
+              &lt;img class&#x3D;&quot;img img2&quot; src&#x3D;&quot;&quot; /&gt;
+              &lt;img class&#x3D;&quot;circle&quot; src&#x3D;&quot;https://i.imgur.com/81PApZd.png&quot; /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;ul class&#x3D;&quot;s-network&quot;&gt;
+            &lt;li&gt;
+                &lt;a href&#x3D;&quot;https://www.linkedin.com/in/hugosaladini/&quot; target&#x3D;&quot;_blank&quot; class&#x3D;&quot;icoLinkedinn&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-linkedin-square&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href&#x3D;&quot;https://github.com/HugoSaladini&quot; target&#x3D;&quot;_blank&quot; class&#x3D;&quot;icoGithub&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-github-square&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+          &lt;div class&#x3D;&quot;divider&quot;&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&quot;name&quot;&gt;Hugo&lt;/div&gt;
+          &lt;div class&#x3D;&quot;title&quot;&gt;
+            &lt;p class&#x3D;&quot;mr-3 ml-3 text-justify&quot;&gt;Sou uma pessoa bem comunicativa, minhas experiências de trabalho me moldaram uma pessoa com um senso critico, e tentando sempre achar um equilíbrio entre as ações, pensando no bem estar de todos visando os valores e princípios, o que me da brilho nos olhos é gerar valor para as pessoas através da tecnologia, busco sempre me aprimorar e conhecer um pouco sobre todo.
+              &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- /Segunda pessoa --&gt;
+
+        &lt;!-- Terceira pessoa --&gt;
+        &lt;div class&#x3D;&quot;person&quot;&gt;
+          &lt;div class&#x3D;&quot;container-sobre&quot;&gt;
+            &lt;div class&#x3D;&quot;container-sobre-inner&quot;&gt;
+              &lt;img class&#x3D;&quot;img img3&quot; src&#x3D;&quot;&quot; /&gt;
+              &lt;img class&#x3D;&quot;circle&quot; src&#x3D;&quot;https://i.imgur.com/VtqEm5B.png&quot; /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;ul class&#x3D;&quot;s-network&quot;&gt;
+            &lt;li&gt;
+                &lt;a href&#x3D;&quot;https://www.linkedin.com/in/kathleen-fidelis/&quot; target&#x3D;&quot;_blank&quot; class&#x3D;&quot;icoLinkedinn&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-linkedin-square&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href&#x3D;&quot;https://github.com/Kathleen-Fidelis&quot; target&#x3D;&quot;_blank&quot; class&#x3D;&quot;icoGithub&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-github-square&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+          &lt;div class&#x3D;&quot;divider&quot;&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&quot;name&quot;&gt;Kathleen&lt;/div&gt;
+          &lt;div class&#x3D;&quot;title&quot;&gt;
+            &lt;p class&#x3D;&quot;mr-3 ml-3 text-justify&quot;&gt;Sou uma pessoa que ama aprender coisas novas, e na tecnologia tenho a oportunidade de estar sempre estudando. Com minhas experiências, aprendi a ter responsabilidade pessoal e ser persistente. E com isso, procuro a cada dia ser uma desenvolvedora melhor. Meu objetivo é poder fazer a diferença na vida das pessoas através da tecnologia.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- /Terceira pessoa --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+      &lt;div class&#x3D;&quot;row d-flex justify-content-center mb-5&quot;&gt;
+
+        &lt;!-- Quarta pessoa --&gt;
+        &lt;div class&#x3D;&quot;person&quot;&gt;
+          &lt;div class&#x3D;&quot;container-sobre&quot;&gt;
+            &lt;div class&#x3D;&quot;container-sobre-inner&quot;&gt;
+              &lt;img class&#x3D;&quot;img img1&quot; src&#x3D;&quot;&quot; /&gt;
+              &lt;img class&#x3D;&quot;circle&quot; src&#x3D;&quot;https://i.imgur.com/ombDUxB.png&quot; /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;ul class&#x3D;&quot;s-network&quot;&gt;
+            &lt;li&gt;
+                &lt;a href&#x3D;&quot;https://www.linkedin.com/in/niashi/&quot; target&#x3D;&quot;_blank&quot; class&#x3D;&quot;icoLinkedinn&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-linkedin-square&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href&#x3D;&quot;https://github.com/Niashi&quot; target&#x3D;&quot;_blank&quot; class&#x3D;&quot;icoGithub&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-github-square&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+          &lt;div class&#x3D;&quot;divider&quot;&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&quot;name&quot;&gt;Mathias&lt;/div&gt;
+          &lt;div class&#x3D;&quot;title&quot;&gt;
+            &lt;p class&#x3D;&quot;mr-3 ml-3 text-justify&quot;&gt;Sou Mathias, paulista e paulistano e tenho 26 anos. Sou filho de imigrantes uruguaios que me ensinaram, antes de mais nada, o que é o verdadeiro interesse pelas coisas do mundo e também me mostraram que preciso dar tudo de mim, sempre. Gosto de tudo, mas sobretudo de jogos de raciocínio e de estudar. Tenho fascínio por seguir evoluindo.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- /Quarta pessoa --&gt;
+        &lt;div class&#x3D;&quot;person&quot;&gt;
+          &lt;div class&#x3D;&quot;container-sobre&quot;&gt;
+            &lt;div class&#x3D;&quot;container-sobre-inner&quot;&gt;
+              &lt;img class&#x3D;&quot;circle&quot; src&#x3D;&quot;https://i.imgur.com/pulyTTT.png&quot; /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;ul class&#x3D;&quot;s-network&quot;&gt;
+            &lt;li&gt;
+                &lt;a href&#x3D;&quot;https://www.linkedin.com/in/falecomruthferreira/&quot; target&#x3D;&quot;_blank&quot; class&#x3D;&quot;icoLinkedinn&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-linkedin-square&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href&#x3D;&quot;https://github.com/ruthfs&quot; target&#x3D;&quot;_blank&quot; class&#x3D;&quot;icoGithub&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-github-square&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+          &lt;div class&#x3D;&quot;divider&quot;&gt;&lt;/div&gt;
+          &lt;div class&#x3D;&quot;name&quot;&gt;Ruth&lt;/div&gt;
+          &lt;div class&#x3D;&quot;title&quot;&gt;
+            &lt;p class&#x3D;&quot;mr-3 ml-3 text-justify&quot;&gt;Aprendizado e interesses diversos fizeram parte de minha vida e essas características que me trouxeram para o âmbito da tecnologia com vontade de me desafiar e construir minha carreira em uma nova área, usando minha adaptabilidade e persistência, me tornei desenvolvedora full stack e busco me aprimorar continuamente.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- /Quarta pessoa --&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- &lt;/div&gt; --&gt;
+&lt;!-- &lt;/div&gt; --&gt;
+&lt;!--  &lt;/div&gt; --&gt;
+&lt;!--/Colaboradores--&gt;
+
+
+
+
+
+
+&lt;!-- MODAL DE NOVAS POSATGENS --&gt;
+
+&lt;!-- Button trigger modal
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#novaPostagem&quot;&gt;
+  Launch demo modal
+&lt;/button&gt; --&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class&#x3D;&quot;modal fade&quot; id&#x3D;&quot;novaPostagem&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot; aria-labelledby&#x3D;&quot;exampleModalCenterTitle&quot;
+  aria-hidden&#x3D;&quot;true&quot;&gt;
+  &lt;div class&#x3D;&quot;modal-dialog modal-dialog-centered&quot; role&#x3D;&quot;document&quot;&gt;
+    &lt;div class&#x3D;&quot;modal-content&quot;&gt;
+      &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+        &lt;h5 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;exampleModalLongTitle&quot;&gt;Novo Produto&lt;/h5&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;modal&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+          &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;titulo&quot;&gt;Nome&lt;/label&gt;
+          &lt;input [(ngModel)]&#x3D;&#x27;produto.nome&#x27; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;titulo&quot; placeholder&#x3D;&quot;Digite o título&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label  for&#x3D;&quot;imagem&quot;&gt;Imagem&lt;/label&gt;
+          &lt;input [(ngModel)]&#x3D;&#x27;produto.imagem&#x27;  type&#x3D;&quot;imagem&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;imagem&quot; placeholder&#x3D;&quot;Coloque aqui o link da Imagem&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;texto&quot;&gt;Descrição&lt;/label&gt;
+          &lt;textarea [(ngModel)]&#x3D;&#x27;produto.descricao&#x27; class&#x3D;&quot;form-control&quot; name&#x3D;&quot;texto&quot; id&#x3D;&quot;texto&quot; rows&#x3D;&quot;3&quot;&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;titulo&quot;&gt;Escolha uma categoria ou &lt;a data-dismiss&#x3D;&quot;modal&quot; routerLink&#x3D;&#x27;/categoria&#x27;&gt;Cadastre uma
+              nova&lt;/a&gt;&lt;/label&gt;
+          &lt;select name&#x3D;&quot;categoria&quot; id&#x3D;&quot;categoria&quot; class&#x3D;&quot;form-control&quot; [(ngModel)]&#x3D;&#x27;idCategoria&#x27;
+            (change)&#x3D;&#x27;findByIdCategoria()&#x27;&gt;
+            &lt;option *ngFor&#x3D;&#x27;let item of listaCategorias&#x27; value&#x3D;&quot;{{item.id}}&quot;&gt;
+              {{item.descricao}}
+            &lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Cancelar&lt;/button&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&#x27;publicar()&#x27; data-dismiss&#x3D;&quot;modal&quot;&gt;Publicar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- MODAL DE NOVAS POSTAGENS --&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;!-- MODAL DE NOVAS POSTAGENS --&gt;
+
+
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./principal.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">/* Colaboradores */
+body {
+  align-items: center;
+  background-color: #f6e6f1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+.person {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+.container-sobre {
+  border-radius: 50%;
+  height: 312px;
+  -webkit-tap-highlight-color: transparent;
+  transform: scale(0.48);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 400px;
+}
+.container-sobre:after {
+  background-color: #f2f2f2;
+  content: &quot;&quot;;
+  height: 10px;
+  position: absolute;
+  top: 390px;
+  width: 100%;
+}
+.container-sobre:hover {
+  transform: scale(0.54);
+}
+.container-sobre-inner {
+  clip-path: path(
+    &quot;M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z&quot;
+  );
+  position: relative;
+  transform-origin: 50%;
+  top: -200px;
+}
+.circle {
+  background-color: rgba(112, 85, 69, 0.753);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 380px;
+  left: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 210px;
+  width: 380px;
+}
+.img {
+  pointer-events: none;
+  position: relative;
+  transform: translateY(20px) scale(1.15);
+  transform-origin: 50% bottom;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container-sobre:hover .img {
+  transform: translateY(0) scale(1.2);
+}
+.img1 {
+  left: 22px;
+  top: 164px;
+  width: 340px;
+}
+.img2 {
+  left: -46px;
+  top: 174px;
+  width: 444px;
+}
+.img3 {
+  left: -16px;
+  top: 144px;
+  width: 466px;
+}
+.divider {
+  background-color: #6B0101;
+  height: 1px;
+  width: 160px;
+}
+.name {
+  color: #404245;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 16px;
+  text-align: center;
+}
+.title {
+  color: #6e6e6e;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 4px;
+}
+/* /Colaboradores */
+
+/* Card */
+.fa-circle-thin:hover{
+  color: black;
+}
+/*/Card */
+
+
+/* estilo do nome do Projeto */
+.nomeProjeto {
+    font-size: 25px;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 25%;
+    width: 100%;
+}
+
+span, span:after {
+	  font-weight: 900;
+    color: #E0BA8A;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    letter-spacing: .1em;
+    padding: .2em 0 .25em 0;
+}
+
+span {
+	  font-size: 4em;
+    z-index: 100;
+    text-shadow: .04em .04em 0 #6B0101;
+}
+
+span:after {
+    content: attr(data-shadow-text);
+    color: rgba(0,0,0,.35);
+    text-shadow: none;
+    position: absolute;
+    left: .0875em;
+    top: .0875em;
+    z-index: -1;
+}
+/* estilo do nome do Projeto */
+
+/* estilo da palavra no jubutrom */
+.estilo{
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  /* position: absolute; */
+  top: 25%;
+  width: 100%;
+}
+/* estilo da palavra no jubutrom */
+
+/* redes socias */
+ul.s-network{
+  list-style: none;
+  padding: 0;
+}
+
+ul.s-network li {
+  display: inline;
+  margin: 0;
+  padding: 2px;
+}
+
+.fa {
+  font-size: 20pt;
+  color: rgb(92, 88, 88);
+  padding: 10px;
+}
+
+.fa-linkedin-square:hover {
+  color: #0072b1;
+}
+
+.fa-github-square:hover{
+  color: rgb(0, 0, 0);
+}
+/* redes sociais */
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!--   NOME LOGO   --><div class="container">  <div class="row d-flex justify-content-center mt-5 mb-5">    <h1 class="nomeProjeto"><span data-shadow-text="Lunação">Lunação</span><br>um projeto contra a pobreza menstrual    </h1>  </div></div><!--   NOME LOGO   --><hr><!--   CARROUSSEL   --><div class="container-fluid">  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">    <ol class="carousel-indicators">      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>      <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>    </ol>    <div class="carousel-inner">      <div class="carousel-item active">        <img class="d-block w-100 carousel-inner" src="https://i.imgur.com/OxawFz0.png" alt="Primeiro Slide">        <div class="carousel-caption d-none d-md-block">        </div>      </div>      <div class="carousel-item">        <img class="d-block w-100" src="https://i.imgur.com/e22D9BW.png" alt="Segundo Slide">      </div>      <div class="carousel-item">        <img class="d-block w-100" src="https://i.imgur.com/bnIDctD.png" alt="Terceiro Slide">      </div>      <div class="carousel-item">        <img class="d-block w-100" src="https://i.imgur.com/w16mxlc.png" alt="Quarto Slide">      </div>      <div class="carousel-item">        <img class="d-block w-100" src="https://i.imgur.com/C5cSdMP.png" alt="Quinto Slide">      </div>      <div class="carousel-item">        <img class="d-block w-100" src="https://i.imgur.com/8dfPRtx.png" alt="Sexto Slide">      </div>      <div class="carousel-item">        <img class="d-block w-100" src="https://i.imgur.com/623tV53.png" alt="Sétimo Slide">      </div>    </div>    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">      <span class="carousel-control-prev-icon" aria-hidden="true"></span>      <span class="sr-only">Anterior</span>    </a>    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">      <span class="carousel-control-next-icon" aria-hidden="true"></span>      <span class="sr-only">Próximo</span>    </a>  </div></div><!--   CARROUSSEL   --><!--   JUMBOTRON PRODUTOS   --><div class="jumbotron jumbotron-fluid bg-faded mt-5 p-4" style="background-color: #FEF7D7;">  <div class="container d-flex justify-content-center">    <h1 class="display-4 estilo" id="produtos">Produtos</h1>  </div>  <div class="row d-flex justify-content-center mt-4">    <div class="col-md-12 d-flex justify-content-center">      <button *ngIf=\'authService.adm() || authService.doador()\' data-toggle="modal" data-target="#novaPostagem" class=" btn text-light" style="background-color: rgba(112, 85, 69, 0.753);">Cadastrar um Produto</button>    </div>  </div></div><!--   JUMBOTRON PRODUTOS   --><!--   BOTÃO DE NOVAS POSATGENS   --><!-- <div class="row d-flex justify-content-center mb-4">  <div class="col-md-12 d-flex justify-content-center">    <button *ngIf=\'authService.adm() || authService.doador()\' data-toggle="modal" data-target="#novaPostagem" class="btn btn-info">Cadastrar um Produto</button>  </div></div> --><!--   BOTÃO DE NOVAS POSATGENS   --><!--   CARD SLIDER   --> <div class="container">  <div class="row"><div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">  <!--   INDICATORES   -->  <ol class="carousel-indicators">    <li class="btn-floating" data-target="#multi-item-example" data-slide-to="0" class="active"></li>    <li class="btn-floating" data-target="#multi-item-example" data-slide-to="1"></li>  </ol>  <!--   INDICATORES   -->  <!--   SLIDES   -->    <div class="carousel-inner" role="listbox">        <div  class="carousel-item active">          <div *ngFor=\'let item of listaProdutos\' class="col-md-3" style="float:left">           <div class="card mb-2">              <img class="card-img-top" src="{{item.imagem}}" alt="Card image cap">              <div class="card-body">                <h4 class="card-title">{{item.nome}}</h4>                <p class="card-text">{{item.descricao}}</p>                <button class="btn btn-outline-success mr-3 mb-2">Mais Informações</button>                <button *ngIf=\'authService.adm() || authService.doador()\' [routerLink]="[\'/produto-edit\', item.id]" class="btn btn-outline-info mr-2">Editar</button>                <button *ngIf=\'authService.adm() || authService.doador()\' [routerLink]="[\'/produto-delete\', item.id]" class="btn btn-outline-danger mr-3">Apagar</button>              </div>            </div>          </div>       </div>      <!--<nav>        <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">          <a class="nav-item nav-link active" id="nav-todosProdutos-tab" data-toggle="tab" href="#nav-todosProdutos"            role="tab" aria-controls="nav-todosProdutos" aria-selected="true">Todos os Produtos</a>          <a (click)=\'findByIdUsuario()\' class="nav-item nav-link" id="nav-meusProdutos-tab" data-toggle="tab"            href="#nav-meusProdutos" role="tab" aria-controls="nav-meusProdutos" aria-selected="false">Meus Produtos</a>          <a class="nav-item nav-link" id="nav-produtosCategoria-tab" data-toggle="tab" href="#nav-produtosCategoria"            role="tab" aria-controls="nav-produtosCategoria" aria-selected="false">Produtos por Categoria</a>        </div>      </nav>      <div class="tab-content mt-5" id="nav-tabContent">        <div class="tab-pane fade show active" id="nav-todosProdutos" role="tabpanel"          aria-labelledby="nav-todosProdutos-tab">          <div class="card-columns">            <div class="card text-center" *ngFor=\'let item of listaProdutos\'>              <div class="card-body">                <img class="card-img-top" src="{{item.imagem}}" alt="Card image cap">                <h5 class="card-title">{{item.nome}}</h5>                <small class="text-muted">Categoria: {{item.categoria.descricao}} </small>                <p class="card-text">{{item.descricao}}</p>                <p class="card-text"><small class="text-muted">Doado por:{{item.usuario.nome}}</small></p>              </div>            </div>          </div>        </div>        <div class="tab-pane fade" id="nav-meusProdutos" role="tabpanel" aria-labelledby="nav-meusProdutos-tab">          <div class="card-columns">            <div class="card text-center" *ngFor=\'let item of usuario.produto\'>              <div class="card-body">                <img class="card-img-top" src="{{item.imagem}}" alt="Card image cap">                <h5 class="card-title">{{item.nome}}</h5>                <small class="text-muted">Categoria: {{item.categoria.descricao}} </small>                <p class="card-text">{{item.descricao}}</p>                <!-- <p class="card-text"><small class="text-muted">{{}}</small></p> -->                <!-- <a [routerLink]="[\'/produto-edit\', item.id]" class="text-info mr-3" href="">Editar</a>                <a [routerLink]="[\'/produto-delete\', item.id]" class="text-danger" href="">Apagar</a>                 </div>            </div>          </div>        </div>        <div class="tab-pane fade" id="nav-produtosCategoria" role="tabpanel"          aria-labelledby="nav-produtosCategoria-tab">          <div class="card-columns" *ngFor=\'let categoria of listaCategorias\'>            <div class="card text-center" *ngFor=\'let item of categoria.produto\'>              <div class="card-body">                <img class="card-img-top" src="{{item.imagem}}" alt="Card image cap">                <h5 class="card-title">{{item.nome}}</h5>                <p class="card-text">{{item.descricao}}</p>                <!-- <p class="card-text"><small class="text-muted">{{}}</small></p> -->              <!-- </div>            </div>          </div>        </div>      </div> -->      </div>      <!-- First slide     <div class="carousel-item active">      <div class="col-md-3" style="float:left">       <div *ngFor=\'let item of usuario.produto\' class="card mb-2">          <img class="card-img-top" src="https://i.imgur.com/auzVsWN.jpg" alt="Card image cap">          <div class="card-body">            <h4 class="card-title">{{item.nome}}</h4>            <p class="card-text">{{item.categoria.descricao}</p>            <a class="btn btn-primary">Button</a>          </div>        </div>      </div>       <!-- First slide -->      <!-- <div class="col-md-3" style="float:left">        <div class="card mb-2">          <img class="card-img-top" width="209" height="209" src="https://imgur.com/zBSufTt" alt="Card image cap">          <div class="card-body">            <h4 class="card-title">Coletor Menstrual</h4>            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the              card\'s content.</p>            <a class="btn btn-primary">Button</a>          </div>        </div>      </div>      <div class="col-md-3" style="float:left">        <div class="card mb-2">          <img class="card-img-top" width="183" height="183" src="https://i.imgur.com/hrJoDd2.jpg"            alt="Card image cap">          <div class="card-body">            <h4 class="card-title">Absorvente reutilizável</h4>            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the              card\'s content.</p>            <a class="btn btn-primary">Button</a>          </div>        </div>      </div> -->    </div>    <!--/.First slide-->    <!--Second slide-->    <!-- <div class="carousel-item">      <div class="col-md-3" style="float:left">        <div class="card mb-2">          <img class="card-img-top" src="https://i.imgur.com/5ks10EP.jpg"            alt="Card image cap">          <div class="card-body">            <h4 class="card-title">Absorvente interno</h4>            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the              card\'s content.</p>            <a class="btn btn-primary">Button</a>          </div>        </div>      </div>      <div class="col-md-3" style="float:left">        <div class="card mb-2">          <img class="card-img-top" width="190" height="190" src="https://i.imgur.com/MpHTXuQ.jpg"            alt="Card image cap">          <div class="card-body">            <h4 class="card-title">Absorvente</h4>            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the              card\'s content.</p>            <a class="btn btn-primary">Button</a>          </div>        </div>      </div>    </div> -->    <!--/.Second slide-->  </div></div><!--Controls--><div class="controls-top ml-3 d-flex justify-content-center">  <a class="btn-floating mr-1" href="#multi-item-example" data-slide="prev"><i id="controle" class="fa fa-circle-thin"      aria-hidden="true"></i></a>  <a class="btn-floating" href="#multi-item-example" data-slide="next"><i id="controle" class="fa fa-circle-thin"      aria-hidden="true"></i></a></div><!--/.Controls--><!--/Card Slider--><!--Jumbotron colaboradores--><div class="jumbotron jumbotron-fluid bg-faded mt-5 p-5" style="background-color: #FEF7D7;">  <div class="container d-flex justify-content-center">    <h1 class="display-4 estilo" id="grupo">Equipe</h1>  </div></div><!--/Jumbotron colaboradores--><!--Colaboradores--><div class="container">  <div class="row">    <div class="col-md-12">      <div class="row d-flex justify-content-center">        <!-- Primeira pessoa -->        <div class="person">          <div class="container-sobre">            <div class="container-sobre-inner">              <img class="img img1" src="" />              <img class="circle" src="https://i.imgur.com/0Uwrucm.png" />            </div>          </div>          <ul class="s-network">            <li>                <a href="https://www.linkedin.com/in/agni-dmitri/" target="_blank" class="icoLinkedinn">                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>                </a>            </li>            <li>                <a href="https://github.com/agnidmitri" target="_blank" class="icoGithub">                    <i class="fa fa-github-square" aria-hidden="true"></i>                </a>            </li>        </ul>          <div class="divider"></div>          <div class="name">Agni</div>          <div class="title">            <p class="mr-3 text-justify">Sou uma pessoa trans não binária, tenho vinte e um anos e sou desenvolvedore full stack              junior. Meu objetivo profissional é trabalhar como dev front-end e aprimorar minhas habilidades com UI/UX              para tornar a tecnologia cada vez mais acessível a todos os públicos. Minha missão na tecnologia é ser representatividade para pessoas trans e não brancas.</p>          </div>        </div>        <!-- /Primeira pessoa -->        <!-- Segunda pessoa -->        <div class="person">          <div class="container-sobre">            <div class="container-sobre-inner">              <img class="img img2" src="" />              <img class="circle" src="https://i.imgur.com/81PApZd.png" />            </div>          </div>          <ul class="s-network">            <li>                <a href="https://www.linkedin.com/in/hugosaladini/" target="_blank" class="icoLinkedinn">                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>                </a>            </li>            <li>                <a href="https://github.com/HugoSaladini" target="_blank" class="icoGithub">                    <i class="fa fa-github-square" aria-hidden="true"></i>                </a>            </li>        </ul>          <div class="divider"></div>          <div class="name">Hugo</div>          <div class="title">            <p class="mr-3 ml-3 text-justify">Sou uma pessoa bem comunicativa, minhas experiências de trabalho me moldaram uma pessoa com um senso critico, e tentando sempre achar um equilíbrio entre as ações, pensando no bem estar de todos visando os valores e princípios, o que me da brilho nos olhos é gerar valor para as pessoas através da tecnologia, busco sempre me aprimorar e conhecer um pouco sobre todo.              </p>          </div>        </div>        <!-- /Segunda pessoa -->        <!-- Terceira pessoa -->        <div class="person">          <div class="container-sobre">            <div class="container-sobre-inner">              <img class="img img3" src="" />              <img class="circle" src="https://i.imgur.com/VtqEm5B.png" />            </div>          </div>          <ul class="s-network">            <li>                <a href="https://www.linkedin.com/in/kathleen-fidelis/" target="_blank" class="icoLinkedinn">                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>                </a>            </li>            <li>                <a href="https://github.com/Kathleen-Fidelis" target="_blank" class="icoGithub">                    <i class="fa fa-github-square" aria-hidden="true"></i>                </a>            </li>        </ul>          <div class="divider"></div>          <div class="name">Kathleen</div>          <div class="title">            <p class="mr-3 ml-3 text-justify">Sou uma pessoa que ama aprender coisas novas, e na tecnologia tenho a oportunidade de estar sempre estudando. Com minhas experiências, aprendi a ter responsabilidade pessoal e ser persistente. E com isso, procuro a cada dia ser uma desenvolvedora melhor. Meu objetivo é poder fazer a diferença na vida das pessoas através da tecnologia.</p>          </div>        </div>        <!-- /Terceira pessoa -->      </div>    </div>    <div class="col-md-12">      <div class="row d-flex justify-content-center mb-5">        <!-- Quarta pessoa -->        <div class="person">          <div class="container-sobre">            <div class="container-sobre-inner">              <img class="img img1" src="" />              <img class="circle" src="https://i.imgur.com/ombDUxB.png" />            </div>          </div>          <ul class="s-network">            <li>                <a href="https://www.linkedin.com/in/niashi/" target="_blank" class="icoLinkedinn">                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>                </a>            </li>            <li>                <a href="https://github.com/Niashi" target="_blank" class="icoGithub">                    <i class="fa fa-github-square" aria-hidden="true"></i>                </a>            </li>        </ul>          <div class="divider"></div>          <div class="name">Mathias</div>          <div class="title">            <p class="mr-3 ml-3 text-justify">Sou Mathias, paulista e paulistano e tenho 26 anos. Sou filho de imigrantes uruguaios que me ensinaram, antes de mais nada, o que é o verdadeiro interesse pelas coisas do mundo e também me mostraram que preciso dar tudo de mim, sempre. Gosto de tudo, mas sobretudo de jogos de raciocínio e de estudar. Tenho fascínio por seguir evoluindo.</p>          </div>        </div>        <!-- /Quarta pessoa -->        <div class="person">          <div class="container-sobre">            <div class="container-sobre-inner">              <img class="circle" src="https://i.imgur.com/pulyTTT.png" />            </div>          </div>          <ul class="s-network">            <li>                <a href="https://www.linkedin.com/in/falecomruthferreira/" target="_blank" class="icoLinkedinn">                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>                </a>            </li>            <li>                <a href="https://github.com/ruthfs" target="_blank" class="icoGithub">                    <i class="fa fa-github-square" aria-hidden="true"></i>                </a>            </li>        </ul>          <div class="divider"></div>          <div class="name">Ruth</div>          <div class="title">            <p class="mr-3 ml-3 text-justify">Aprendizado e interesses diversos fizeram parte de minha vida e essas características que me trouxeram para o âmbito da tecnologia com vontade de me desafiar e construir minha carreira em uma nova área, usando minha adaptabilidade e persistência, me tornei desenvolvedora full stack e busco me aprimorar continuamente.</p>          </div>        </div>        <!-- /Quarta pessoa -->      </div>    </div>  </div></div><!-- </div> --><!-- </div> --><!--  </div> --><!--/Colaboradores--><!-- MODAL DE NOVAS POSATGENS --><!-- Button trigger modal<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#novaPostagem">  Launch demo modal</button> --><!-- Modal --><div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"  aria-hidden="true">  <div class="modal-dialog modal-dialog-centered" role="document">    <div class="modal-content">      <div class="modal-header">        <h5 class="modal-title" id="exampleModalLongTitle">Novo Produto</h5>        <button type="button" class="close" data-dismiss="modal" aria-label="Close">          <span aria-hidden="true">&times;</span>        </button>      </div>      <div class="modal-body">        <div class="form-group">          <label for="titulo">Nome</label>          <input [(ngModel)]=\'produto.nome\' type="text" class="form-control" id="titulo" placeholder="Digite o título">        </div>        <div class="form-group">          <label  for="imagem">Imagem</label>          <input [(ngModel)]=\'produto.imagem\'  type="imagem" class="form-control" id="imagem" placeholder="Coloque aqui o link da Imagem">        </div>        <div class="form-group">          <label for="texto">Descrição</label>          <textarea [(ngModel)]=\'produto.descricao\' class="form-control" name="texto" id="texto" rows="3"></textarea>        </div>        <div class="form-group">          <label for="titulo">Escolha uma categoria ou <a data-dismiss="modal" routerLink=\'/categoria\'>Cadastre uma              nova</a></label>          <select name="categoria" id="categoria" class="form-control" [(ngModel)]=\'idCategoria\'            (change)=\'findByIdCategoria()\'>            <option *ngFor=\'let item of listaCategorias\' value="{{item.id}}">              {{item.descricao}}            </option>          </select>        </div>      </div>      <div class="modal-footer">        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>        <button type="button" class="btn btn-success" (click)=\'publicar()\' data-dismiss="modal">Publicar</button>      </div>    </div>  </div></div><!-- MODAL DE NOVAS POSTAGENS --><!-- MODAL DE NOVAS POSTAGENS --></div>'
+    var COMPONENTS = [{'name': 'AlertasComponent', 'selector': 'app-alertas'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastrarComponent', 'selector': 'app-cadastrar'},{'name': 'CategoriaComponent', 'selector': 'app-categoria'},{'name': 'CategoriaDeleteComponent', 'selector': 'app-categoria-delete'},{'name': 'CategoriaEditComponent', 'selector': 'app-categoria-edit'},{'name': 'EducativoComponent', 'selector': 'app-educativo'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'PrincipalComponent', 'selector': 'app-principal'},{'name': 'ProdutoDeleteComponent', 'selector': 'app-produto-delete'},{'name': 'ProdutoEditComponent', 'selector': 'app-produto-edit'},{'name': 'RodapeComponent', 'selector': 'app-rodape'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'PrincipalComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PrincipalComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
